@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>floating..</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You're Amazing!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to top right, #ffdee9, #b5fffc);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      text-align: center;
+      position: relative;
+      max-width: 400px;
+      width: 90%;
+      border: 4px solid transparent;
+      background-clip: padding-box;
+      animation: glowBorder 3s infinite alternate;
+    }
+
+    @keyframes glowBorder {
+      from {
+        border-color: #ff9a9e;
+      }
+      to {
+        border-color: #fad0c4;
+      }
+    }
+
+    h1 {
+      color: #ff6f91;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #555;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 25px;
+      background-color: #ff6f91;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff4f79;
+      transform: scale(1.05);
+    }
+
+    #customMsg {
+      margin-top: 30px;
+      font-size: 1.3em;
+      color: #444;
+      display: none;
+      animation: fadeIn 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>You’re Amazing!😏 </h1>
+    <p>Just a little reminder that you're doing great. Take a deep breath🌝, smile🫵😁, and keep shining✨!</p>
+    <button onclick="showCustomMessage()">Click Me</button>
+  </div>
+
+  <div id="customMsg"> heheheee dekhhh ye wala 1 time banayaaa kesa h ??😏</div>
+
+  <script>
+    function showCustomMessage() {
+      const msg = document.getElementById("customMsg");
+      msg.style.display = "block";
+    }
+  </script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
